@@ -2,7 +2,7 @@ require('dotenv').config();
 const discord = require('discord.js');
 const client = new discord.Client();
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
 
 const openedTickets = new Map();
 
@@ -60,7 +60,7 @@ client.on('modMessage', async (message, user, guild) => {
                         deny: ['VIEW_CHANNEL']
                     },
                     {
-                        id: '533096507667382289',
+                        id: '648168996209688616',
                         allow: ['VIEW_CHANNEL']
                     }
                 ]
